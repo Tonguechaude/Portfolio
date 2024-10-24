@@ -1,0 +1,4 @@
+baseURL = 'https://tonguechaude.github.io/'
+languageCode = 'en-us'
+title = 'Portfolio de Tongue-chaude'
+theme="github-style"
