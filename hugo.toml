@@ -1,4 +1,39 @@
-baseURL = 'https://tonguechaude.github.io/'
-languageCode = 'en-us'
+baseURL = "https://tonguechaude.github.io/"
+languageCode = 'fr'
 title = 'Portfolio de Tongue-chaude'
-theme="github-style"
+theme = "github-style"
+
+publishDir = "public"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+enableGitInfo = true
+
+[params]
+  author = "Tonguechaude"
+  description = "In solitude, where we are least alone."
+  github = "Tonguechaude"
+  linkedin = "evan challias"
+  email = "tonguefroide@gmail.com"
+  url = "https://tonguechaude;servehttp.com"
+  keywords = "portfolio"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😀"
+  favicon = "/images/github.png"
+  avatar = "/images/avatar.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  location = "France"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[[params.links]]
+    title = "Link"
+    href = "https://github.com/tonguechaude"
+
+[[params.links]]
+    title = "Link2"
+    href = "https://tonguechaude.servehttp.com"
+    icon = "images/kaarism.jpeg"
