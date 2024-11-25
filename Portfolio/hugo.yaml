@@ -1,0 +1,46 @@
+baseURL: "https://tonguechaude.github.io/"
+title: Portfolio
+theme: PaperMod
+languagecode: fr
+
+params:
+
+  homeInfoParams:
+    Title: "Salut \U0001F44B"
+    Content: Bienvenue sur mon Portfolio, ici vous trouverez plein d'informations sur plein de truc super cool !
+
+  socialIcons:
+    - name: LinkedIn
+      url: 'https://www.linkedin.com/in/evan-c-29805a276/'
+    - name: Github
+      url: 'https://github.com/Tonguechaude'
+    - name: Gitlab
+      url: 'https://gitlab.com/'
+
+  cover:
+    linkFullImages: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  #ShowShareButton: true
+  #ShowPostNavLinks: true
+
+
+
+menu:
+  main:
+    - identifier: projets
+      name: Projets
+      url: /projets/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 30
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 40
