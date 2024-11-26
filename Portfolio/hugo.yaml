@@ -3,12 +3,47 @@ title: Portfolio
 theme: PaperMod
 languagecode: fr
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
 params:
 
-  homeInfoParams:
-    Title: "Salut \U0001F44B"
-    Content: Bienvenue sur mon Portfolio, ici vous trouverez plein d'informations sur plein de truc super cool !
+  env: production
+  #description: "Je m'appelle Evan, étudiant en 2ᵉ année en BUT informatique à l'IUT de Montpellier-Sète. Passionné par l'administration système et la Cybersécurité j'essaye d'organiser des petits projet en lien avec mes passions."
+  title: Porfolio Evan
+  keywords: [Portfolio, Data Science, CyberSec]
+  #author: Evan Challias
+  DateFormat: "January 2, 2005"
+  defaultTheme: auto
+  disableThemeToggle: false
 
+  ShowReadingTime: true
+  #ShowShareButtons: true
+  #ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  #ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Accueil"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: ""
+    Content: 
+  
   socialIcons:
     - name: LinkedIn
       url: 'https://www.linkedin.com/in/evan-c-29805a276/'
@@ -17,14 +52,26 @@ params:
     - name: Gitlab
       url: 'https://gitlab.com/'
 
+    # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Salut \U0001F44B"
+    subtitle: "Bienvenue sur mon Portfolio, ici vous trouverez plein d'informations sur plein de truc super cool !"
+    imageUrl: "img/chill-guy.jpg"
+    imageWidth: 240
+    imageHeight: 240
+    imageTitle: Pp compelement Relax
+    buttons:
+      - name: Projets
+        url: projets
+      - name: Tags
+        url: tags
+
   cover:
     linkFullImages: true
-  ShowBreadCrumbs: true
-  ShowReadingTime: true
-  #ShowShareButton: true
-  #ShowPostNavLinks: true
-
-
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
 menu:
   main:
