@@ -4,7 +4,7 @@ draft: false
 title: 'Convertisseur Rust'
 summary: Simple rust converter
 tags: ['Rust', 'Docker']
-categories: ['langage bas niveau']
+categories: ['Application']
 ---
 
 # Mon convertisseur rust dockerisée
