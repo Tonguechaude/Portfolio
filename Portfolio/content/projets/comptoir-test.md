@@ -7,8 +7,6 @@ tags: ['Rust', 'SQLite', 'Asynchrone', 'API']
 categories: ['Application']
 ---
 
-# Analyse des Logiciels Libres du Comptoir du Libre
-
 Ce projet en Rust a pour objectif d'analyser les logiciels libres répertoriés sur le site [Comptoir du Libre](https://comptoir-du-libre.org/). Il vérifie la disponibilité des sites web et des dépôts de code source associés à chaque logiciel, en enregistrant les résultats dans une base de données SQLite et en exportant les données au format CSV.
 Le **Comptoir du Libre** est une plateforme collaborative qui recense les logiciels libres métiers utiles aux services publics, ainsi que leurs utilisateurs et prestataires. [Lien vers le code source](https://gitlab.adullact.net/echallias/comptoir_tests_urls)
 
