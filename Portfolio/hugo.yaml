@@ -50,7 +50,7 @@ params:
     - name: Github
       url: 'https://github.com/Tonguechaude'
     - name: Gitlab
-      url: 'https://gitlab.com/'
+      url: 'https://gitlab.com/Tonguechaude'
 
     # profile-mode
   profileMode:
