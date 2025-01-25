@@ -75,19 +75,23 @@ params:
 
 menu:
   main:
+    - identifier : presentation
+      name : Présentation
+      url : /presentation/
+      weight : 10
     - identifier: projets
       name: Projets
       url: /projets/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
-    - identifier: categories
-      name: categories
-      url: /categories/
       weight: 30
+    - identifier: categories
+      name: catégories
+      url: /categories/
+      weight: 40
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 40
+      weight: 50
