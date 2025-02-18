@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Spring on Portfolio</title>
-    <link>http://localhost:1313/tags/spring/</link>
+    <link>https://tonguechaude.fr/tags/spring/</link>
     <description>Recent content in Spring on Portfolio</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>fr</language>
     <lastBuildDate>Mon, 25 Nov 2024 19:04:44 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tonguechaude.fr/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VoteOmatic</title>
-      <link>http://localhost:1313/projets/voteomatic/</link>
+      <link>https://tonguechaude.fr/projets/voteomatic/</link>
       <pubDate>Mon, 25 Nov 2024 19:04:44 +0100</pubDate>
-      <guid>http://localhost:1313/projets/voteomatic/</guid>
+      <guid>https://tonguechaude.fr/projets/voteomatic/</guid>
       <description>application de vote sécurisée</description>
     </item>
   </channel>

@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/presentation/presentation/</loc>
+    <loc>https://tonguechaude.fr/presentation/presentation/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projets/comptoir-test/</loc>
+    <loc>https://tonguechaude.fr/projets/comptoir-test/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/api/</loc>
+    <loc>https://tonguechaude.fr/tags/api/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/application/</loc>
+    <loc>https://tonguechaude.fr/categories/application/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://tonguechaude.fr/archives/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/asynchrone/</loc>
+    <loc>https://tonguechaude.fr/tags/asynchrone/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://tonguechaude.fr/categories/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projets/convertisseurrust/</loc>
+    <loc>https://tonguechaude.fr/projets/convertisseurrust/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/cryptographie/</loc>
+    <loc>https://tonguechaude.fr/categories/cryptographie/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://tonguechaude.fr/tags/docker/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker-compose/</loc>
+    <loc>https://tonguechaude.fr/tags/docker-compose/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/elgamal/</loc>
+    <loc>https://tonguechaude.fr/tags/elgamal/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>https://tonguechaude.fr/tags/java/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jeu/</loc>
+    <loc>https://tonguechaude.fr/tags/jeu/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projets/gol/</loc>
+    <loc>https://tonguechaude.fr/projets/gol/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mariadb/</loc>
+    <loc>https://tonguechaude.fr/tags/mariadb/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://tonguechaude.fr/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/pr%C3%A9sentation/</loc>
+    <loc>https://tonguechaude.fr/categories/pr%C3%A9sentation/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/presentation/</loc>
+    <loc>https://tonguechaude.fr/presentation/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projets/</loc>
+    <loc>https://tonguechaude.fr/projets/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rust/</loc>
+    <loc>https://tonguechaude.fr/tags/rust/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spring/</loc>
+    <loc>https://tonguechaude.fr/tags/spring/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sqlite/</loc>
+    <loc>https://tonguechaude.fr/tags/sqlite/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/swing/</loc>
+    <loc>https://tonguechaude.fr/tags/swing/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://tonguechaude.fr/tags/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projets/voteomatic/</loc>
+    <loc>https://tonguechaude.fr/projets/voteomatic/</loc>
     <lastmod>2024-11-25T19:04:44+01:00</lastmod>
   </url>
 </urlset>

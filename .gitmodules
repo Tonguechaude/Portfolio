@@ -1,4 +1,4 @@
 [submodule "public"]
-    path = public
+    path = /public
     url = git@github.com:Tonguechaude/tonguechaude.github.io.git
 
