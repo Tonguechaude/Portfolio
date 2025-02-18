@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rust on Portfolio</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on Portfolio</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 25 Nov 2024 19:04:44 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyse des Logiciels Libres du Comptoir du Libre</title>
+      <link>http://localhost:1313/projets/comptoir-test/</link>
+      <pubDate>Mon, 25 Nov 2024 19:04:44 +0100</pubDate>
+      <guid>http://localhost:1313/projets/comptoir-test/</guid>
+      <description>Un outil en Rust pour analyser les logiciels libres du Comptoir du Libre en vérifiant la disponibilité de leurs sites web et de leurs dépôts de code source.</description>
+    </item>
+    <item>
+      <title>Convertisseur Rust</title>
+      <link>http://localhost:1313/projets/convertisseurrust/</link>
+      <pubDate>Mon, 25 Nov 2024 19:04:44 +0100</pubDate>
+      <guid>http://localhost:1313/projets/convertisseurrust/</guid>
+      <description>Simple rust converter</description>
+    </item>
+  </channel>
+</rss>

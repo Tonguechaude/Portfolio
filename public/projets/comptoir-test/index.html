@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Analyse des Logiciels Libres du Comptoir du Libre | Portfolio</title>
+<meta name="keywords" content="Rust, SQLite, Asynchrone, API">
+<meta name="description" content="Un outil en Rust pour analyser les logiciels libres du Comptoir du Libre en vérifiant la disponibilité de leurs sites web et de leurs dépôts de code source.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/projets/comptoir-test/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projets/comptoir-test/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/projets/comptoir-test/">
+  <meta property="og:site_name" content="Portfolio">
+  <meta property="og:title" content="Analyse des Logiciels Libres du Comptoir du Libre">
+  <meta property="og:description" content="Un outil en Rust pour analyser les logiciels libres du Comptoir du Libre en vérifiant la disponibilité de leurs sites web et de leurs dépôts de code source.">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projets">
+    <meta property="article:published_time" content="2024-11-25T19:04:44+01:00">
+    <meta property="article:modified_time" content="2024-11-25T19:04:44+01:00">
+    <meta property="article:tag" content="Rust">
+    <meta property="article:tag" content="SQLite">
+    <meta property="article:tag" content="Asynchrone">
+    <meta property="article:tag" content="API">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Analyse des Logiciels Libres du Comptoir du Libre">
+<meta name="twitter:description" content="Un outil en Rust pour analyser les logiciels libres du Comptoir du Libre en vérifiant la disponibilité de leurs sites web et de leurs dépôts de code source.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projets",
+      "item": "http://localhost:1313/projets/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Analyse des Logiciels Libres du Comptoir du Libre",
+      "item": "http://localhost:1313/projets/comptoir-test/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Analyse des Logiciels Libres du Comptoir du Libre",
+  "name": "Analyse des Logiciels Libres du Comptoir du Libre",
+  "description": "Un outil en Rust pour analyser les logiciels libres du Comptoir du Libre en vérifiant la disponibilité de leurs sites web et de leurs dépôts de code source.",
+  "keywords": [
+    "Rust", "SQLite", "Asynchrone", "API"
+  ],
+  "articleBody": "Ce projet en Rust a pour objectif d’analyser les logiciels libres répertoriés sur le site Comptoir du Libre. Il vérifie la disponibilité des sites web et des dépôts de code source associés à chaque logiciel, en enregistrant les résultats dans une base de données SQLite et en exportant les données au format CSV. Le Comptoir du Libre est une plateforme collaborative qui recense les logiciels libres métiers utiles aux services publics, ainsi que leurs utilisateurs et prestataires. Lien vers le code source\nContexte du Projet Ce script a été fait dans le cadre de mon alternance à l’ADULLACT\nLe projet s’inscrit dans le cadre d’une étude visant à évaluer la fiabilité des ressources en ligne des logiciels libres. L’objectif est de fournir une analyse détaillée de la disponibilité des sites web et des dépôts de code source, afin d’aider les utilisateurs à identifier les logiciels dont les ressources en ligne sont les plus fiables.\nMéthodes de Travail et Résultats Obtenus Le programme suit les étapes suivantes :\nChargement des Données : Téléchargement du fichier JSON exporté par le Comptoir du Libre, contenant des informations sur les logiciels libres.\nAnalyse Asynchrone : Utilisation de la bibliothèque reqwest pour effectuer des requêtes HTTP asynchrones, permettant de tester la disponibilité des sites web et des dépôts de code source.\nGestion des Concurrences : Implémentation d’un sémaphore avec la bibliothèque tokio pour limiter le nombre de requêtes concurrentes, évitant ainsi une surcharge du serveur cible.\nStockage des Résultats : Enregistrement des résultats dans une base de données SQLite, avec une table dédiée aux résultats des tests.\nExportation des Données : Génération d’un fichier CSV contenant les résultats, facilitant ainsi l’analyse et la présentation des données.\nCompétences Travaillées Ce projet a permis de développer et de renforcer les compétences suivantes :\nProgrammation en Rust : Approfondissement de la maîtrise du langage Rust, notamment en ce qui concerne la gestion des erreurs, la manipulation des fichiers et l’utilisation des bibliothèques externes.\nProgrammation Asynchrone : Apprentissage de la programmation asynchrone en Rust avec la bibliothèque tokio, permettant de gérer efficacement les opérations d’entrée/sortie sans blocage.\nGestion des Concurrences : Mise en œuvre de mécanismes de contrôle de la concurrence, tels que les sémaphores, pour limiter le nombre de requêtes simultanées et éviter la surcharge des serveurs cibles.\nInteraction avec des APIs Web : Utilisation de la bibliothèque reqwest pour effectuer des requêtes HTTP et analyser les réponses, facilitant ainsi l’interaction avec des services web externes.\nManipulation de JSON : Utilisation de la bibliothèque serde_json pour parser et manipuler des données au format JSON, couramment utilisées pour l’échange de données entre applications.\nGestion de Bases de Données : Création et manipulation d’une base de données SQLite avec la bibliothèque rusqlite, permettant de stocker et de gérer efficacement les résultats des tests.\nExportation de Données : Génération de fichiers CSV à partir de données structurées, facilitant l’analyse et la présentation des résultats.\nExemple de Code Voici un extrait du code source illustrant la vérification de la disponibilité d’une URL :\nuse reqwest::Client; use reqwest::StatusCode; async fn test_url(client: \u0026Client, url: \u0026str) -\u003e Result\u003cStatusCode, String\u003e { println!(\"Test en cours pour l'URL: {}\", url); match client .head(url) .header(\"User-Agent\", \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0\") .send() .await { Ok(res) =\u003e { println!(\"Réponse reçue pour {}: {}\", url, res.status()); Ok(res.status()) } Err(e) =\u003e { let error_message = if e.is_timeout() { format!(\"Erreur: Timeout pour {}\", url) } else if e.is_connect() { format!(\"Erreur de connexion pour {}: {}\", url, e) } else { format!(\"Erreur lors de la requête pour {}: {}\", url, e) }; println!(\"{}\", error_message); Err(error_message) } } } Cet extrait montre comment effectuer une requête HTTP de type HEAD de manière asynchrone pour tester la disponibilité d’une URL.\nConclusion Ce projet a permis de développer une application robuste et efficace pour analyser la disponibilité des ressources en ligne des logiciels libres. Il a également offert l’opportunité de renforcer des compétences clés en programmation Rust, en gestion de la concurrence et en interaction avec des APIs web.\n",
+  "wordCount" : "664",
+  "inLanguage": "en",
+  "datePublished": "2024-11-25T19:04:44+01:00",
+  "dateModified": "2024-11-25T19:04:44+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/projets/comptoir-test/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Portfolio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Accueil (Alt + H)">
+                <img src="http://localhost:1313/apple-touch-icon.png" alt="" aria-label="logo"
+                    height="35">Accueil</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/presentation/" title="Présentation">
+                    <span>Présentation</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projets/" title="Projets">
+                    <span>Projets</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="catégories">
+                    <span>catégories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projets/">Projets</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Analyse des Logiciels Libres du Comptoir du Libre
+    </h1>
+    <div class="post-meta"><span title='2024-11-25 19:04:44 +0100 CET'>November 25, 25044</span>&nbsp;·&nbsp;4 min
+
+</div>
+  </header> 
+  <div class="post-content"><p>Ce projet en Rust a pour objectif d&rsquo;analyser les logiciels libres répertoriés sur le site <a href="https://comptoir-du-libre.org/">Comptoir du Libre</a>. Il vérifie la disponibilité des sites web et des dépôts de code source associés à chaque logiciel, en enregistrant les résultats dans une base de données SQLite et en exportant les données au format CSV.
+Le <strong>Comptoir du Libre</strong> est une plateforme collaborative qui recense les logiciels libres métiers utiles aux services publics, ainsi que leurs utilisateurs et prestataires. <a href="https://gitlab.adullact.net/echallias/comptoir_tests_urls">Lien vers le code source</a></p>
+<h2 id="contexte-du-projet">Contexte du Projet<a hidden class="anchor" aria-hidden="true" href="#contexte-du-projet">#</a></h2>
+<p>Ce script a été fait dans le cadre de mon alternance à l&rsquo;<a href="https://adullact.org">ADULLACT</a></p>
+<p>Le projet s&rsquo;inscrit dans le cadre d&rsquo;une étude visant à évaluer la fiabilité des ressources en ligne des logiciels libres. L&rsquo;objectif est de fournir une analyse détaillée de la disponibilité des sites web et des dépôts de code source, afin d&rsquo;aider les utilisateurs à identifier les logiciels dont les ressources en ligne sont les plus fiables.</p>
+<h2 id="méthodes-de-travail-et-résultats-obtenus">Méthodes de Travail et Résultats Obtenus<a hidden class="anchor" aria-hidden="true" href="#méthodes-de-travail-et-résultats-obtenus">#</a></h2>
+<p>Le programme suit les étapes suivantes :</p>
+<ol>
+<li>
+<p><strong>Chargement des Données</strong> : Téléchargement du fichier JSON exporté par le Comptoir du Libre, contenant des informations sur les logiciels libres.</p>
+</li>
+<li>
+<p><strong>Analyse Asynchrone</strong> : Utilisation de la bibliothèque <code>reqwest</code> pour effectuer des requêtes HTTP asynchrones, permettant de tester la disponibilité des sites web et des dépôts de code source.</p>
+</li>
+<li>
+<p><strong>Gestion des Concurrences</strong> : Implémentation d&rsquo;un sémaphore avec la bibliothèque <code>tokio</code> pour limiter le nombre de requêtes concurrentes, évitant ainsi une surcharge du serveur cible.</p>
+</li>
+<li>
+<p><strong>Stockage des Résultats</strong> : Enregistrement des résultats dans une base de données SQLite, avec une table dédiée aux résultats des tests.</p>
+</li>
+<li>
+<p><strong>Exportation des Données</strong> : Génération d&rsquo;un fichier CSV contenant les résultats, facilitant ainsi l&rsquo;analyse et la présentation des données.</p>
+</li>
+</ol>
+<h2 id="compétences-travaillées">Compétences Travaillées<a hidden class="anchor" aria-hidden="true" href="#compétences-travaillées">#</a></h2>
+<p>Ce projet a permis de développer et de renforcer les compétences suivantes :</p>
+<ul>
+<li>
+<p><strong>Programmation en Rust</strong> : Approfondissement de la maîtrise du langage Rust, notamment en ce qui concerne la gestion des erreurs, la manipulation des fichiers et l&rsquo;utilisation des bibliothèques externes.</p>
+</li>
+<li>
+<p><strong>Programmation Asynchrone</strong> : Apprentissage de la programmation asynchrone en Rust avec la bibliothèque <code>tokio</code>, permettant de gérer efficacement les opérations d&rsquo;entrée/sortie sans blocage.</p>
+</li>
+<li>
+<p><strong>Gestion des Concurrences</strong> : Mise en œuvre de mécanismes de contrôle de la concurrence, tels que les sémaphores, pour limiter le nombre de requêtes simultanées et éviter la surcharge des serveurs cibles.</p>
+</li>
+<li>
+<p><strong>Interaction avec des APIs Web</strong> : Utilisation de la bibliothèque <code>reqwest</code> pour effectuer des requêtes HTTP et analyser les réponses, facilitant ainsi l&rsquo;interaction avec des services web externes.</p>
+</li>
+<li>
+<p><strong>Manipulation de JSON</strong> : Utilisation de la bibliothèque <code>serde_json</code> pour parser et manipuler des données au format JSON, couramment utilisées pour l&rsquo;échange de données entre applications.</p>
+</li>
+<li>
+<p><strong>Gestion de Bases de Données</strong> : Création et manipulation d&rsquo;une base de données SQLite avec la bibliothèque <code>rusqlite</code>, permettant de stocker et de gérer efficacement les résultats des tests.</p>
+</li>
+<li>
+<p><strong>Exportation de Données</strong> : Génération de fichiers CSV à partir de données structurées, facilitant l&rsquo;analyse et la présentation des résultats.</p>
+</li>
+</ul>
+<h2 id="exemple-de-code">Exemple de Code<a hidden class="anchor" aria-hidden="true" href="#exemple-de-code">#</a></h2>
+<p>Voici un extrait du code source illustrant la vérification de la disponibilité d&rsquo;une URL :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> reqwest::Client;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> reqwest::StatusCode;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test_url</span>(client: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Client</span>, url: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Result<span style="color:#f92672">&lt;</span>StatusCode, String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Test en cours pour l&#39;URL: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, url);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> client
+</span></span><span style="display:flex;"><span>        .head(url)
+</span></span><span style="display:flex;"><span>        .header(<span style="color:#e6db74">&#34;User-Agent&#34;</span>, <span style="color:#e6db74">&#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0&#34;</span>)
+</span></span><span style="display:flex;"><span>        .send()
+</span></span><span style="display:flex;"><span>        .<span style="color:#66d9ef">await</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Ok(res) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;Réponse reçue pour </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, url, res.status());
+</span></span><span style="display:flex;"><span>            Ok(res.status())
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        Err(e) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> error_message <span style="color:#f92672">=</span> <span style="color:#66d9ef">if</span> e.is_timeout() {
+</span></span><span style="display:flex;"><span>                format!(<span style="color:#e6db74">&#34;Erreur: Timeout pour </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, url)
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> e.is_connect() {
+</span></span><span style="display:flex;"><span>                format!(<span style="color:#e6db74">&#34;Erreur de connexion pour </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, url, e)
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                format!(<span style="color:#e6db74">&#34;Erreur lors de la requête pour </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, url, e)
+</span></span><span style="display:flex;"><span>            };
+</span></span><span style="display:flex;"><span>            println!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, error_message);
+</span></span><span style="display:flex;"><span>            Err(error_message)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Cet extrait montre comment effectuer une requête HTTP de type HEAD de manière asynchrone pour tester la disponibilité d&rsquo;une URL.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Ce projet a permis de développer une application robuste et efficace pour analyser la disponibilité des ressources en ligne des logiciels libres. Il a également offert l&rsquo;opportunité de renforcer des compétences clés en programmation Rust, en gestion de la concurrence et en interaction avec des APIs web.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/rust/">Rust</a></li>
+      <li><a href="http://localhost:1313/tags/sqlite/">SQLite</a></li>
+      <li><a href="http://localhost:1313/tags/asynchrone/">Asynchrone</a></li>
+      <li><a href="http://localhost:1313/tags/api/">API</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

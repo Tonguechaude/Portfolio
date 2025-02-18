@@ -1,3 +1,4 @@
-[submodule "Portfolio/public"]
-	path = Portfolio/public
-	url = git@github.com:Tonguechaude/tonguechaude.github.io.git
+[submodule "public"]
+    path = public
+    url = git@github.com:Tonguechaude/tonguechaude.github.io.git
+
