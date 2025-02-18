@@ -1,7 +1,7 @@
 [submodule "public"]
-    path = /public/
-    url = git@github.com:Tonguechaude/tonguechaude.github.io.git
+	path = public
+	url = git@github.com:Tonguechaude/tonguechaude.github.io.git
 
 [submodule "/themes/PaperMod"]
-    path = /themes/PaperMod/
+    path = themes/PaperMod
     url = git@github.com:Tonguechaude/hugo-PaperMod.git
